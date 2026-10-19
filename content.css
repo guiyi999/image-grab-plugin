@@ -1,0 +1,18 @@
+#img-grab-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99999;
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  cursor: pointer;
+  font-size: 16px;
+  transition: transform 0.2s;
+}
+#img-grab-btn:hover {
+  transform: scale(1.05);
+}

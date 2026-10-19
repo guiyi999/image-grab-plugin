@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "电商图片提取插件",
+  "version": "1.0",
+  "description": "一键提取商品图片",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "downloads",
+    "storage"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["content.css"]
+    }
+  ],
+  "action": {
+    "default_title": "提取图片"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
